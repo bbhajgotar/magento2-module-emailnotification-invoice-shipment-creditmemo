@@ -44,6 +44,9 @@
  - "Send Creditmemo Email" : This will help you send shipment email without Checked checkbox on "Email Copy of Creditmemo"
 
 ![alt text](https://github.com/bbhajgotar/magento2-module-emailnotification-invoice-shipment-creditmemo/blob/main/docs/Screenshot%20(1137).png?raw=true)
+![alt text](https://github.com/bbhajgotar/magento2-module-emailnotification-invoice-shipment-creditmemo/blob/main/docs/Screenshot%20(1138).png?raw=true)
+![alt text](https://github.com/bbhajgotar/magento2-module-emailnotification-invoice-shipment-creditmemo/blob/main/docs/Screenshot%20(1139).png?raw=true)
+![alt text](https://github.com/bbhajgotar/magento2-module-emailnotification-invoice-shipment-creditmemo/blob/main/docs/Screenshot%20(1140).png?raw=true)
 
 
 
