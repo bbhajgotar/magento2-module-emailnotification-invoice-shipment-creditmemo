@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+     <system>
+         <tab id="email_notification" translate="label" sortOrder="110">
+             <label>Email Notifications</label>
+         </tab>
+         <section id="notification" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+             <class>separator-top</class>
+             <label>Settings</label>
+             <tab>email_notification</tab>
+             <resource>VendorName_ModuleName::acl_path</resource>
+             <group id="notification_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                 <label>Email Notifications</label>
+                 <attribute type="expanded">1</attribute>
+                 <field id="invoice_email" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Send Invoice Email</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                 </field>
+                 <field id="shipment_email" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Send Shipment Email</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                 </field>
+                 <field id="creditmemo_email" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Send Creditmemo Email</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                 </field>
+             </group>
+        </section>
+     </system>
+</config>

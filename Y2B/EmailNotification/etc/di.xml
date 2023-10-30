@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <type name="\Magento\Sales\Controller\Adminhtml\Order\Invoice\Save">
+        <plugin name="send_email_before_invoice" type="Y2B\EmailNotification\Plugin\AutoMailInvoice" sortOrder="1" disabled="false"  />
+    </type>
+    
+    <type name="\Magento\Shipping\Controller\Adminhtml\Order\Shipment\Save">
+        <plugin name="send_email_before_shipment" type="Y2B\EmailNotification\Plugin\AutoMailShipment" sortOrder="1" disabled="false"  />
+    </type>
+    
+    <type name="\Magento\Sales\Controller\Adminhtml\Order\Creditmemo\Save">
+        <plugin name="send_email_before_creditmemo" type="Y2B\EmailNotification\Plugin\AutoMailCreditmemo" sortOrder="1" disabled="false"  />
+    </type>
+
+</config>
